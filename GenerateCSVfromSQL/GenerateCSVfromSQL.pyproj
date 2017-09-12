@@ -12,6 +12,10 @@
     <OutputPath>.</OutputPath>
     <Name>GenerateCSVfromSQL</Name>
     <RootNamespace>GenerateCSVfromSQL</RootNamespace>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +26,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DBAccessor.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GenerateCSVfromSQL.py" />
   </ItemGroup>
   <PropertyGroup>
